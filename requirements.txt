@@ -1,0 +1,15 @@
+# Core dependencies
+numpy>=1.21.0
+scipy>=1.7.0
+matplotlib>=3.4.0
+
+# Isaac Sim dependencies
+# Note: These are typically installed with Isaac Sim
+# omni.isaac.core
+# omni.isaac.gym
+
+# Development tools
+pytest>=6.0.0
+black>=21.0.0
+flake8>=3.9.0
+mypy>=0.910 
