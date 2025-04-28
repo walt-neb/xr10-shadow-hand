@@ -13,11 +13,11 @@ fi
 # Activate virtual environment
 source "$ISAACLAB_PATH/isaaclab_venv/bin/activate"
 
-# Install/upgrade pip and required packages
-pip install --upgrade pip
-if [ -f "$ISAACLAB_PATH/requirements.txt" ]; then
-    pip install -r "$ISAACLAB_PATH/requirements.txt"
-fi
+## Install/upgrade pip and required packages
+#pip install --upgrade pip
+#if [ -f "$ISAACLAB_PATH/requirements.txt" ]; then
+#    pip install -r "$ISAACLAB_PATH/requirements.txt"
+#fi
 
 # Set core Isaac Sim environment variables
 export CARB_APP_PATH="$ISAACSIM_PATH/kit"
