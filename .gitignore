@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -16,6 +15,7 @@ lib64/
 parts/
 sdist/
 var/
+wheels/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -23,6 +23,7 @@ var/
 # Virtual Environment
 venv/
 ENV/
+env/
 
 # IDE
 .idea/
@@ -30,15 +31,25 @@ ENV/
 *.swp
 *.swo
 
-# Isaac Sim
-*.usd
+# Isaac Sim specific
+*.usd.lock
 *.usda
 *.usdc
 *.usdz
-*.log
-*.omniverse
-*.omniverse_cache
+*.cache/
+_build/
+logs/
+.isaac_cache/
 
-# OS
+# OS specific
 .DS_Store
-Thumbs.db 
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+assets/*.usd
+!assets/ur10_picker.usd 
