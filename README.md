@@ -15,9 +15,27 @@ xr10_shadow_hand/
 
 ## Prerequisites
 
-- NVIDIA Isaac Sim 2023.1 or later
-- Python 3.8 or later
+- NVIDIA Isaac Sim 4.5.0 ([Installation Guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/))
+- NVIDIA Isaac Lab 4.5.0 ([Installation Guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html))
+- Python 3.10
 - NVIDIA GPU with CUDA support
+- Minimum 32GB RAM and 16GB VRAM (recommended)
+
+## Development Environment Setup
+
+The development environment is configured using `setup_dev_env.sh`, which:
+- Sets up necessary environment variables
+- Configures Python paths for Isaac Sim and Isaac Lab
+- Creates symbolic links for easy access to development tools
+- Is automatically sourced from your `.bashrc` file
+
+To set up the development environment:
+1. Ensure Isaac Sim and Isaac Lab are installed
+2. Clone this repository
+3. Source the setup script:
+   ```bash
+   source ~/IsaacLab/setup_dev_env.sh
+   ```
 
 ## Setup
 
